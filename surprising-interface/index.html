@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    <title>surprise</title>
+  </head>
+  <body>
+    <a href="#" onclick="randomSite();" target="_blank">
+      <button class="strong-tilt-move-shake" style="margin: 10%" id="button1">
+        hey there
+      </button>
+    </a>
+    <a href="#" onclick="randomSite();" target="_blank">
+      <button class="strong-tilt-move-shake" style="margin: 20%" id="button2">
+        welcome
+      </button>
+    </a>
+    <a href="#" onclick="randomSite();" target="_blank">
+      <button class="strong-tilt-move-shake" style="margin: 30%" id="button3">
+        its nice
+      </button>
+    </a>
+    <a href="#" onclick="randomSite();" target="_blank">
+      <button
+        class="strong-tilt-move-shake"
+        style="margin-top: 40%; margin-left: 45%"
+        id="button4"
+      >
+        to see
+      </button>
+    </a>
+    <a href="#" onclick="randomSite();" target="_blank">
+      <button
+        class="strong-tilt-move-shake"
+        style="margin-top: 20%; margin-left: 60%"
+        id="button5"
+      >
+        U
+      </button>
+    </a>
+    <a href="#" onclick="randomSite();" target="_blank">
+      <button
+        class="strong-tilt-move-shake"
+        style="margin-top: 10%; margin-left: 70%"
+        id="button6"
+      >
+        . . ...... .
+      </button>
+    </a>
+    <a href="#" onclick="randomSite();" onclick="showIt()" target="_blank">
+      <button
+        class="strong-tilt-move-shake"
+        style="margin-top: 25%; margin-left: 80%"
+        id="button7"
+      >
+        ?
+      </button>
+    </a>
+    <script>
+      let bs = document.querySelectorAll("button");
+      for (let i = 0; i < bs.length; i++) {
+        bs[i].style.marginLeft = Math.random() * 90 + "vw";
+      }
+    </script>
+
+    <script>
+      var sites = [
+        "https://youtu.be/YFDg-pgE0Hk?feature=shared",
+        "https://youtu.be/45cYwDMibGo?feature=shared",
+        "https://youtu.be/RXawa90YU2s?feature=shared",
+        "https://youtu.be/TMMiXjwhODU?feature=shared",
+        "https://youtu.be/KQetemT1sWc?feature=shared",
+        "https://youtu.be/Man4Xw8Xypo?feature=shared",
+        "https://youtu.be/Y_V6y1ZCg_8?feature=shared",
+        "https://youtu.be/WoBLi5eE-wY?feature=shared",
+        "https://youtu.be/HuS5NuXRb5Y?feature=shared",
+        "https://youtu.be/28d_A_NuJ7A?feature=shared",
+        "https://youtu.be/cu1dvIwk6pc?feature=shared",
+        "https://youtu.be/Q3wlxujmD3A?feature=shared",
+        "https://youtu.be/zPTKv26G4p4?feature=shared",
+      ];
+
+      function randomSite() {
+        var i = parseInt(Math.random() * sites.length);
+        location.href = sites[i];
+      }
+    </script>
+    <!-- <a href="#" onclick="randomSite();">Random</a> -->
+  </body>
+</html>

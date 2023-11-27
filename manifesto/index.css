@@ -1,0 +1,17 @@
+body {
+  font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter,
+    monospace;
+  /* background-image: url(pic.png); */
+
+  /* margin-top: 200px; */
+}
+
+h1 {
+  /* text-align: center; */
+  color: black;
+  font-weight: normal;
+  padding: 1.5rem;
+  font-size: 4vw;
+  width: 50%;
+  /* margin: auto; */
+}

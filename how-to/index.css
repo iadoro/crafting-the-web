@@ -1,0 +1,99 @@
+body {
+  font-family: "Lucida Console", Courier, monospace;
+  background-color: "white";
+  /* background-color: #ffe9ec; */
+  /* background-color: #dbfe87; */
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1.4fr 1.7fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 15px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "stretch1 s1"
+    "stretch2 s2"
+    "stretch3 s3"
+    "stretch4 s4"
+    "stretch5 s5"
+    "stretch6 s6";
+}
+
+.stretch1 {
+  grid-area: stretch1;
+}
+
+.stretch2 {
+  grid-area: stretch2;
+}
+
+.stretch3 {
+  grid-area: stretch3;
+}
+
+.stretch4 {
+  grid-area: stretch4;
+}
+
+.stretch5 {
+  grid-area: stretch5;
+}
+
+.stretch6 {
+  grid-area: stretch6;
+}
+
+.s1 {
+  grid-area: s1;
+  margin-right: 20%;
+}
+
+.s2 {
+  grid-area: s2;
+  margin-right: 20%;
+}
+
+.s3 {
+  grid-area: s3;
+  margin-right: 20%;
+}
+
+.s4 {
+  grid-area: s4;
+  margin-right: 20%;
+}
+
+.s5 {
+  grid-area: s5;
+  margin-right: 20%;
+}
+
+.s6 {
+  grid-area: s6;
+  margin-right: 20%;
+}
+
+/* shaking animation taken from: https://unused-css.com/blog/css-shake-animation/ */
+
+h1.strong-tilt-move-shake:hover {
+  animation: tilt-n-move-shaking 0.15s infinite;
+}
+
+@keyframes tilt-n-move-shaking {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(5px, 5px) rotate(5deg);
+  }
+  50% {
+    transform: translate(0, 0) rotate(0eg);
+  }
+  75% {
+    transform: translate(-5px, 5px) rotate(-5deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}

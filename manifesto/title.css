@@ -1,0 +1,42 @@
+body {
+  font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter,
+    monospace;
+  margin-top: 100px;
+}
+
+h1 {
+  text-align: center;
+  background-color: none;
+  color: #85bda6;
+  font-weight: normal;
+  padding: 1.5rem;
+  font-size: 9vw;
+  width: 50%;
+  margin: auto;
+  display: inline-block;
+  font-style: italic;
+}
+
+/* shaking animation taken from: https://unused-css.com/blog/css-shake-animation/ */
+
+h1.strong-tilt-move-shake:hover {
+  animation: tilt-n-move-shaking 0.15s infinite;
+}
+
+@keyframes tilt-n-move-shaking {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(5px, 5px) rotate(5deg);
+  }
+  50% {
+    transform: translate(0, 0) rotate(0eg);
+  }
+  75% {
+    transform: translate(-5px, 5px) rotate(-5deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}

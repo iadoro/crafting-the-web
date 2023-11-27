@@ -1,0 +1,47 @@
+body {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+style {
+  scroll-behavior: smooth;
+}
+
+h1.invert:hover {
+  filter: invert(100);
+}
+
+img {
+  width: 12vw;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+img.strong-tilt-move-shake:hover {
+  animation: tilt-n-move-shaking 0.15s infinite;
+  filter: invert(100);
+}
+
+@keyframes tilt-n-move-shaking {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(5px, 5px) rotate(5deg);
+  }
+  50% {
+    transform: translate(0, 0) rotate(0eg);
+  }
+  75% {
+    transform: translate(-5px, 5px) rotate(-5deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+div {
+  position: absolute;
+}
